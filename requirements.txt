@@ -1,0 +1,11 @@
+ipykernel
+jupyterlab
+numpy
+pandas
+geopandas
+geofeather
+requests
+altair
+pyarrow
+matplotlib
+descartes
