@@ -9,3 +9,4 @@ altair
 pyarrow
 matplotlib
 descartes
+plotly
