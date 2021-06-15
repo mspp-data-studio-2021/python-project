@@ -1,7 +1,7 @@
 python-project
 ==============
 
-This is an example project to illustrate some organization and reproducability concepts for the _Policy & Data Studio_ course in Summer 2020. 
+This is an example project to illustrate some organization and reproducability concepts for the _Policy & Data Studio_ course in Summer 2021. 
 
 ## Getting Started
 
@@ -30,7 +30,7 @@ Alternatively, you can run each step individually following the numbered orderin
 * [`01_download-tracts.py`](code/01_download-tracts.py)
   * This downloads a shapefile for all NYC census tracts (2010) from NYC's Open Data portal, and saves the files in [`/data/raw`](/data/raw)
 * [`02_download-acs.py`](code/02_download-acs.py)
-  * This downloads ACS summary file data for NYC tracts from a [separate project](https://github.com/wagner-mspp-2020/r-project), where it was originally downloaded with R using the [`tidycensus`](https://walker-data.com/tidycensus/) package to access the Census API. 
+  * This downloads ACS summary file data for NYC tracts from a [separate project](https://github.com/mspp-data-studio-2021/r-project), where it was originally downloaded with R using the [`tidycensus`](https://walker-data.com/tidycensus/) package to access the Census API. 
 * [`03_clean-join-tract-data.ipynb`](code/03_clean-join-tract-data.ipynb)
   * This reads in the two raw data files created above, and claculates some new ACS variables and joins the ACS data with the tract geometries from the shapefile. The final clean tract-level dataset with geometries is saved to [`/data/clean`](/data/clean)
 * [`99-1_tract-maps.ipynb`](code/99-1_tract-maps.ipynb)
