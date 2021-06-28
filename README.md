@@ -1,13 +1,15 @@
 python-project
 ==============
 
-This is an example project to illustrate some organization and reproducability concepts for the _Policy & Data Studio_ course in Summer 2021. 
+This is an example project to illustrate some organization and reproducibility concepts for the _Policy & Data Studio_ course in Summer 2021. 
 
 ## Getting Started
 
 You will first need to download and install [Python3](https://realpython.com/installing-python/).
 
-Then clone this project repository, and open a command prompt/terminal window and naviate to the project directory. 
+Then clone this project repository, and open a command prompt/terminal window and navigate to the project directory. 
+
+To access your API key without risking it being published on GitHub this project uses the dotenv package. You need to edit the file .env_sample and add your key, then rename the file to .env.
 
 Now you can create a virtual environment for python. On Mac OS you can use the following steps:
 
@@ -32,6 +34,6 @@ Alternatively, you can run each step individually following the numbered orderin
 * [`02_download-acs.py`](code/02_download-acs.py)
   * This downloads ACS summary file data for NYC tracts from a [separate project](https://github.com/mspp-data-studio-2021/r-project), where it was originally downloaded with R using the [`tidycensus`](https://walker-data.com/tidycensus/) package to access the Census API. 
 * [`03_clean-join-tract-data.ipynb`](code/03_clean-join-tract-data.ipynb)
-  * This reads in the two raw data files created above, and claculates some new ACS variables and joins the ACS data with the tract geometries from the shapefile. The final clean tract-level dataset with geometries is saved to [`/data/clean`](/data/clean)
+  * This reads in the two raw data files created above, and calculates some new ACS variables and joins the ACS data with the tract geometries from the shapefile. The final clean tract-level dataset with geometries is saved to [`/data/clean`](/data/clean)
 * [`99-1_tract-maps.ipynb`](code/99-1_tract-maps.ipynb)
   * This notebook reads in the clean tract dataset and produces some maps. The map files are saved to [`/img`](/img) and the rendered notebook is saved to [`/docs`](/docs)

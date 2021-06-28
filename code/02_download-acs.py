@@ -1,6 +1,16 @@
-from pathlib import Path
-import shutil
 import requests
+import os
+from pathlib import Path
+from dotenv import load_dotenv
+
+# since we retrieved all the data from the API in the R process, we don't 
+# actually need to access our Census API key, but to illustrate the process 
+# this is how you would use dotenv for this
+
+load_dotenv()  # take environment variables from .env
+
+api_key = os.environ.get('CENSUS_API_KEY', '')
+
 
 proj_dir = Path(__file__).parent.parent
 
