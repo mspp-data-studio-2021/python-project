@@ -37,3 +37,8 @@ Alternatively, you can run each step individually following the numbered orderin
   * This reads in the two raw data files created above, and calculates some new ACS variables and joins the ACS data with the tract geometries from the shapefile. The final clean tract-level dataset with geometries is saved to [`/data/clean`](/data/clean)
 * [`99-1_tract-maps.ipynb`](code/99-1_tract-maps.ipynb)
   * This notebook reads in the clean tract dataset and produces some maps. The map files are saved to [`/img`](/img) and the rendered notebook is saved to [`/docs`](/docs)
+
+## License
+
+askhaskjdhas
+

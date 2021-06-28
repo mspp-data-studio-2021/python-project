@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 # since we retrieved all the data from the API in the R process, we don't 
 # actually need to access our Census API key, but to illustrate the process 
-# this is how you would use dotenv for this
+# this is how you would use dotenv library for this
 
 load_dotenv()  # take environment variables from .env
 
